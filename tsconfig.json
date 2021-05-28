@@ -18,6 +18,8 @@
     ]
   },
   "angularCompilerOptions": {
+    /* SE AGREGA "strictTemplates": true, PARA ACTIVAR COMPROBACION ESTRICTA DE LA PLANTILLA */
+    "strictTemplates": true,
     "enableI18nLegacyMessageIdFormat": false
   }
 }
