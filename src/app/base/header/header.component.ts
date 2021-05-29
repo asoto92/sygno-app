@@ -16,4 +16,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  actualizar(): void{
+    this.user.name = "Carlos"
+  }
+
 }
