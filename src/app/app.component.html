@@ -1,5 +1,12 @@
 <div class="container">
-    {{hello}} {{title}}
+    {{hello + ' ' + user}} {{title}}
+    <br> /* LA LINEA SIGUIENTE ES UN PIPE, ES UNA VARIABLE A LA QUE SE LE PROPORCIONA UN FORMATO DE PRESENTACION */
+    <br> {{today | date: 'dd/mm/yyyy' }}
+
+
+    <input type="text" name="value" placeholder="Escribe un numero" [(ngModel)]="value"> {{value}}
+
+
 </div>
 
 <router-outlet></router-outlet>
