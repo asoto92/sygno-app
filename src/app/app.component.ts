@@ -9,7 +9,8 @@ import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleCh
 export class AppComponent implements OnInit, OnChanges, AfterContentInit, AfterViewInit {
   hello = 'hello';
   //user  = 'Alfredo';
-  user = {name: 'Alfredo', email: 'alfredo@hotmail.com'};
+  // user AHORA ES UN OBJETO CON 2 VALORES EN EL
+  user = {name: 'Alfredo', email: 'alfredo@hotmail.com', registerDate: new Date()};
   title = 'sygno-app';
   today = new Date();
   value = 0;

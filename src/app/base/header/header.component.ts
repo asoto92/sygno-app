@@ -8,7 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Input()
-  user = '';
+  //user = '';
+  user: any = {};
+
   constructor() { }
 
   ngOnInit(): void {
