@@ -8,7 +8,8 @@ import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleCh
 })
 export class AppComponent implements OnInit, OnChanges, AfterContentInit, AfterViewInit {
   hello = 'hello';
-  user  = 'Alfredo';
+  //user  = 'Alfredo';
+  user = {name: 'Alfredo', email: 'alfredo@hotmail.com'};
   title = 'sygno-app';
   today = new Date();
   value = 0;
@@ -31,5 +32,14 @@ export class AppComponent implements OnInit, OnChanges, AfterContentInit, AfterV
   ngOnInit(): void{
     console.log('ngOnInit');
   }
+
+  aumentar(): void {
+    this.value += 10;
+  }
+
+  disminuir(): void {
+    this.value -= 10;
+  }
+
 }
 

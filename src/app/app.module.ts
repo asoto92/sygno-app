@@ -4,13 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './base/header/header.component';
+import { FooterComponent } from './base/footer/footer.component';
 
 /*  */
 @NgModule({
   /* EL declarations SIGNIFICA QUE EN EL SE PONEN LOS MODULOS O DIRECTIVAS QUE SON PARTE DE ESTE MODULO (AppModule) */
   declarations: [
     /* AppComponent ES UN MODULO  */
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
