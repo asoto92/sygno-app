@@ -1,26 +1,15 @@
-<app-header [user]="user"></app-header>
+<header>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Articulos</a>
+        </li>
 
-<section class="main">
+    </ul>
+</header>
 
-    <div class="container">
-        {{hello + ' ' + user}} {{title}}
-        <br> /* LA LINEA SIGUIENTE ES UN PIPE, ES UNA VARIABLE A LA QUE SE LE PROPORCIONA UN FORMATO DE PRESENTACION */
-        <br> {{today | date: 'dd/mm/yyyy' }}
+<router-outlet>
 
-        <!-- EJEMPLO DE PROPERTY BINDING -->
-        <input type="text" name="value" [(ngModel)]="value">
-        <br>
-
-        <!-- EJEMPLO DE EVENT BINDING (LAS 2 SIGUIENTES LINEAS) -->
-        <button (click)="aumentar()" class="btn btn-primary">Aumentar</button>
-
-        <button (click)="disminuir()">Disminuir</button>
-
-        <label for=""> value:{{value}} </label>
-
-    </div>
-
-    <router-outlet></router-outlet>
-</section>
-
-<app-footer></app-footer>
+</router-outlet>
